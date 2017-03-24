@@ -15,6 +15,9 @@
 		281DC7581D07EE36002B2661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281DC7561D07EE36002B2661 /* LaunchScreen.storyboard */; };
 		281DC7631D07EE36002B2661 /* MyBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DC7621D07EE36002B2661 /* MyBoxDemoTests.m */; };
 		281DC76E1D07EE36002B2661 /* MyBoxDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DC76D1D07EE36002B2661 /* MyBoxDemoUITests.m */; };
+		281DC78A1D0805E3002B2661 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DC7871D0805E3002B2661 /* MenuView.m */; };
+		281DC78B1D0805E3002B2661 /* MyBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281DC7891D0805E3002B2661 /* MyBoxView.m */; };
+		B154052A1E55A371007F7D56 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = B15405291E55A371007F7D56 /* 10.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		281DC7691D07EE36002B2661 /* MyBoxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBoxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281DC76D1D07EE36002B2661 /* MyBoxDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBoxDemoUITests.m; sourceTree = "<group>"; };
 		281DC76F1D07EE36002B2661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281DC77E1D07F286002B2661 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		281DC7861D0805E3002B2661 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		281DC7871D0805E3002B2661 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		281DC7881D0805E3002B2661 /* MyBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBoxView.h; sourceTree = "<group>"; };
+		281DC7891D0805E3002B2661 /* MyBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBoxView.m; sourceTree = "<group>"; };
+		B15405291E55A371007F7D56 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				281DC74C1D07EE36002B2661 /* AppDelegate.m */,
 				281DC74E1D07EE36002B2661 /* ViewController.h */,
 				281DC74F1D07EE36002B2661 /* ViewController.m */,
+				B15405291E55A371007F7D56 /* 10.png */,
+				281DC7851D0805E3002B2661 /* BoxView */,
+				281DC77E1D07F286002B2661 /* PrefixHeader.pch */,
 				281DC7511D07EE36002B2661 /* Main.storyboard */,
 				281DC7541D07EE36002B2661 /* Assets.xcassets */,
 				281DC7561D07EE36002B2661 /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				281DC76F1D07EE36002B2661 /* Info.plist */,
 			);
 			path = MyBoxDemoUITests;
+			sourceTree = "<group>";
+		};
+		281DC7851D0805E3002B2661 /* BoxView */ = {
+			isa = PBXGroup;
+			children = (
+				281DC7861D0805E3002B2661 /* MenuView.h */,
+				281DC7871D0805E3002B2661 /* MenuView.m */,
+				281DC7881D0805E3002B2661 /* MyBoxView.h */,
+				281DC7891D0805E3002B2661 /* MyBoxView.m */,
+			);
+			path = BoxView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +268,7 @@
 			files = (
 				281DC7581D07EE36002B2661 /* LaunchScreen.storyboard in Resources */,
 				281DC7551D07EE36002B2661 /* Assets.xcassets in Resources */,
+				B154052A1E55A371007F7D56 /* 10.png in Resources */,
 				281DC7531D07EE36002B2661 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				281DC7501D07EE36002B2661 /* ViewController.m in Sources */,
+				281DC78B1D0805E3002B2661 /* MyBoxView.m in Sources */,
+				281DC78A1D0805E3002B2661 /* MenuView.m in Sources */,
 				281DC74D1D07EE36002B2661 /* AppDelegate.m in Sources */,
 				281DC74A1D07EE36002B2661 /* main.m in Sources */,
 			);
@@ -413,10 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qi Chao Zhou (NDQ2529RF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qi Chao Zhou (NDQ2529RF9)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyBoxDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MyBoxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhaoml.MyBoxDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DidiDoctor.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0d1b8090-9372-4c9f-be80-7e616b9d851a";
 			};
 			name = Debug;
 		};
@@ -424,10 +454,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qi Chao Zhou (NDQ2529RF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qi Chao Zhou (NDQ2529RF9)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyBoxDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MyBoxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhaoml.MyBoxDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DidiDoctor.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0d1b8090-9372-4c9f-be80-7e616b9d851a";
 			};
 			name = Release;
 		};
@@ -498,6 +532,7 @@
 				281DC7741D07EE36002B2661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		281DC7751D07EE36002B2661 /* Build configuration list for PBXNativeTarget "MyBoxDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +541,7 @@
 				281DC7771D07EE36002B2661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		281DC7781D07EE36002B2661 /* Build configuration list for PBXNativeTarget "MyBoxDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +550,7 @@
 				281DC77A1D07EE36002B2661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

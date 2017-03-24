@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  MyBoxDemo
+//
+//  Created by zhaoml on 16/6/8.
+//  Copyright © 2016年 zhaoml. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+///  window
+#define MyWindow             [UIApplication sharedApplication].keyWindow
+#define IOS8            ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0)
+#define TurnString(a)        [MyController replaceNullString:a]
+///屏幕宽
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+///屏幕高
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+/// 字体
+#define DDFont(a)           [UIFont systemFontOfSize:a]
+/// UIView的末尾(y)
+#define ViewEndH(view)       (view.frame.size.height + view.frame.origin.y)
+/// UIView的末尾(x)
+#define ViewEndX(view)       (view.frame.size.width + view.frame.origin.x)
+
+#pragma mark- 有关设定颜色
+/// 字标题颜色
+#endif /* PrefixHeader_pch */
